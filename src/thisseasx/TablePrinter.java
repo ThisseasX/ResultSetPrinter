@@ -10,7 +10,7 @@ import java.util.*;
  *
  * @author Thiss
  */
-class TablePrinter {
+public class TablePrinter {
 
     private static List<List<String>> table;
     private static int columnCount;
@@ -18,10 +18,11 @@ class TablePrinter {
     /**
      * The static method visible to the outside world, responsible for
      * printing the entire table.
-     * @param table A {@link List} of lists, containing the data of a table.
+     *
+     * @param table       A {@link List} of lists, containing the data of a table.
      * @param columnCount The number of columns
      */
-    static void printTable(List<List<String>> table, int columnCount) {
+    public static void printTable(List<List<String>> table, int columnCount) {
         TablePrinter.table = table;
         TablePrinter.columnCount = columnCount;
         printTable();
@@ -42,6 +43,7 @@ class TablePrinter {
 
     /**
      * Gets the length of the longest string in a given column.
+     *
      * @param col A given column whose width we want to calculate.
      * @return The length of the longest string in a given column.
      */
@@ -58,6 +60,7 @@ class TablePrinter {
     /**
      * In the theoretical case where
      * we do not know the number of columns.
+     *
      * @return The number of columns.
      */
     @SuppressWarnings("unused")
@@ -107,6 +110,7 @@ class TablePrinter {
 
     /**
      * Prints the data of the row.
+     *
      * @param row A given row of the table, from which the values
      *            are extracted and printed.
      */
@@ -118,6 +122,7 @@ class TablePrinter {
 
     /**
      * Prints empty spaces for columns that have no data.
+     *
      * @param row A given row of the table, from which the values
      *            are extracted and printed.
      */

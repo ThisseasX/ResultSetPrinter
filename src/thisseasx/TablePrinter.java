@@ -72,7 +72,7 @@ public class TablePrinter {
         int columnWidth = 0;
         for (List<String> row : table) {
             if (col >= row.size()) continue;
-            String s = row.get(col);
+            String s = row.get(col) == null ? "null" : row.get(col);
             columnWidth = s.length() > columnWidth ? s.length() : columnWidth;
         }
         return columnWidth;

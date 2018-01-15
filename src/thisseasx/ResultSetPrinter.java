@@ -1,4 +1,7 @@
 /*
+ * A simple library that helps you print the data of a ResultSet,
+ * acquired from a SELECT SQL query, in a familiar-looking MySQL table style.
+ *
  * Copyright (C) 2018  Thisseas Xanthopoulos
  *
  * This program is free software; you can redistribute it and/or

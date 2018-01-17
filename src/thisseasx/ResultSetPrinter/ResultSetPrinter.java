@@ -47,7 +47,7 @@ public class ResultSetPrinter {
      * @param rs The {@link ResultSet} acquired from an SQL {@link Statement} query.
      */
     public static void printResultSet(ResultSet rs) throws SQLException {
-        rs.first();
+        rs.beforeFirst();
         ResultSetPrinter.rs = rs;
         ResultSetPrinter.columnCount = rs.getMetaData().getColumnCount();
         printResultSet();
